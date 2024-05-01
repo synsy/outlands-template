@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footerWrapper{
+    width: 100vw;
+    height: 6rem;
+    background-color: #3D302D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-style: solid; */
+    color: #FDF58B;
+}

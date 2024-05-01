@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 6rem;
+    background-color: #3D302D;
+    display: grid;
+    color: #FDF58B;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.characterTemplate {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr; /* Added an extra row for the Skill Total */
+}
+
+.characterTemplate li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.removeButton {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    background-color: rgb(255, 100, 100);
+}
+
+.removeButton:active {
+    background-color: rgb(255, 50, 50);
+    transform: scale(0.85);
+}
+
+.skillInput {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.skillTotal {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    padding-top: 1rem;
+    color: black; /* Default color */
+}
+
+.skillTotal.redText {
+    color: red; /* Color when the value exceeds 720.0 */
+}

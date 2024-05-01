@@ -1,0 +1,19 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: calc(100vh - 12rem); /* Subtract the height of the header */
+  align-items: center;
+}
+
+.selectedSkills {
+  margin-bottom: 20px; /* Add some spacing below the selected skills list */
+  position: relative; /* Set position to relative for containing the absolute positioned dropdown */
+}
+
+.searchableDropdownWrapper {
+  position: absolute;
+  top: 100%; /* Position dropdown below the last added skill */
+  left: 0;
+  width: 100%;
+}
